@@ -71,6 +71,7 @@ export async function upsertTodo(input: z.infer<typeof upsertTodoSchema>) {
     data: {
       title: input.title,
       userId: session?.user?.id,
+      doneAt: null, // Set the default status to "waiting"
     },
   });
   return todo;

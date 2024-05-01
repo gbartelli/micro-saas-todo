@@ -32,8 +32,8 @@ export function UserDropdown({ user }: MainSidebarProps) {
           className="relative h-8 flex items-center justify-between w-full space-x-2 !px-0"
         >
           <Avatar className="h-8 w-8">
-            <AvatarImage src={user.image || ""} alt={user.name || "U"} />
-            <AvatarFallback>{user.name || "U"}</AvatarFallback>
+            <AvatarImage src={user.image || ""} alt={"U"} />
+            <AvatarFallback>{"U"}</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col flex-1 space-y-1 text-left">

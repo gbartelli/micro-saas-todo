@@ -49,6 +49,12 @@ model User {
   accounts      Account[]
   sessions      Session[]
   todos         Todo[]
+
+  stripeCustomerId         String?
+  stripeSubscriptionId     String?
+  stripeSubscriptionStatus String?
+  stripePriceId            String?
+
 }
 
 model VerificationToken {
